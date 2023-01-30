@@ -42,4 +42,25 @@ public class WhenFeedingTheAnimals {
         Assert.assertEquals("Salmon", food);
 
     }
+
+    @Test
+  public void shouldFeedPremiumDogsDeluxeDogFood() {
+      Feeder feeder = new Feeder();
+
+      String food = feeder.feeds("Dog", true);
+
+      Assert.assertEquals("Bone", food);
+      System.out.println("this is the premium food for Dogs  " +food);
+  }
+
+
+  @Test
+    public void shouldFeedPremiumHamstersLettuce() {
+        Feeder feeder = new Feeder();
+
+        String food = feeder.feeds("Hamster", true);
+
+        Assert.assertEquals("Lettuce", food);
+        System.out.println("this is the premium food for Hamsters " +food);
+    }
 }
