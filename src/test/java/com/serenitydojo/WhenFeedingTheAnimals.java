@@ -61,6 +61,6 @@ public class WhenFeedingTheAnimals {
         String food = feeder.feeds("Hamster", true);
 
         Assert.assertEquals("Lettuce", food);
-        System.out.println("this is the premium food for Hamsters " +food);
+        System.out.println("this is the premium food  for Hamsters " +food);
     }
 }
